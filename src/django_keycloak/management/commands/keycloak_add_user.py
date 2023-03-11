@@ -21,8 +21,8 @@ def realm(name):
 
 def get_username_field() -> str:
     UserModel = get_user_model()
-    if hasattr(UserModel, "USERNAME_FIELDS"):
-        return UserModel.USERNAME_FIELDS
+    if hasattr(UserModel, "USERNAME_FIELD"):
+        return UserModel.USERNAME_FIELD
     return "username"
 
 
